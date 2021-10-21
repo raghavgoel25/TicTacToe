@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    /* background: linear-gradient(to right, #fbd3e9, #bb377d); */
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, hsla(299, 100%, 50%, 0.685) 100%);
+}
+
+#game {
+    border: 1px solid;
+    width: 500px;
+    height: 524px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.header {
+    margin-left: 550px;
+    background: none;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    justify-content: space-between;
+    size: 10px;
+    ;
+    padding: 10px;
+}
+
+.turns {
+    /* padding: 12px; */
+    background: none;
+}
+
+.status {
+    flex-grow: 1;
+    text-align: center;
+    background: none;
+}
+
+.redo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    padding-left: 20px;
+}
+
+.box {
+    display: grid;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    gap: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tile {
+    cursor: pointer;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    justify-content: center;
+    font-size: 50px;
+    font-family: fantasy;
+    color: grey;
+}
+
+.tile:hover {
+    background: linear-gradient(to right, #2980b9, #2c3e50);
+}
+
+.tile-win {
+    color: black;
+}
